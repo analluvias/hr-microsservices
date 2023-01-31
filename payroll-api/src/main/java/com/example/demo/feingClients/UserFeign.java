@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 // "user-api" nome que definimos para a api de user no application.xml daquela api
-// url = "http://localhost:8000", url que definimos para aquela api em seu application.xml
-@FeignClient(name = "user-api", url = "http://localhost:8000")
+@FeignClient(name = "user-api")
 public interface UserFeign {
 
     // colocamos aqui as assinaturas de todos os métodos os quais essa api poderá acessar,
